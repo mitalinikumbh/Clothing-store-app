@@ -1,0 +1,44 @@
+.address-list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.address-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.address-card {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+}
+
+.add-address-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.add-address-btn {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #4a8dd6;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.add-address-btn:hover {
+    background-color: #0056b3;
+}
+
+.address-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+}

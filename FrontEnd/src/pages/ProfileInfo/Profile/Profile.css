@@ -1,0 +1,71 @@
+/* Fullscreen centered layout */
+.profile-wrapper {
+    min-height: calc(100vh - 120px);
+    /* Adjust for navbar+footer */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 60px;
+    background-color: #f8f9fa;
+}
+
+/* Large full-height card */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar section */
+.profile-sidebar {
+    background-color: #f1f3f5;
+    border-right: 1px solid #dee2e6;
+    padding: 30px 20px;
+    width: 250px;
+}
+
+.profile-sidebar .list-group-item {
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.profile-sidebar .list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.profile-sidebar .list-group-item.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Main content section */
+.profile-content {
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .profile-wrapper {
+        padding: 20px;
+    }
+
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+}

@@ -1,0 +1,55 @@
+/* Navbar.css */
+
+.glass-navbar {
+    background: rgba(0, 0, 0, 0.75);
+    /* glass effect */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffd700;
+    /* gold on hover */
+    text-decoration: none;
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    color: #ffd700 !important;
+    /* hover color */
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.navbar .dropdown-menu {
+    background-color: #fff;
+    min-width: 10rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .dropdown-item {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
